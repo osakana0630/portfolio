@@ -3,11 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { format } from "date-fns";
 import { CalendarDays } from "lucide-react";
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 
 const designs = [
   {
     title: "Figma無料テンプレートをもとにLPデザインコーディング",
-    image: "/pattern1.png",
+    image: `${BASE_PATH}/pattern1.png`,
     href: "/designs/pattern-1",
   },
 ];
