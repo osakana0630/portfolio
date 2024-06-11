@@ -25,7 +25,7 @@ export function Footer() {
         <span className="flex-1"></span>
 
         <nav className="space-y-2">
-          <h3 className="font-semibold text-[16px]">Sections</h3>
+          <h3 className="font-semibold text-[16px] text-white">Sections</h3>
           <div className="flex gap-28">
             <ul className="flex flex-col gap-3 text-[14px] text-[#9E9E9E]">
               <li>Home</li>

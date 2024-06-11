@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
-import HeroImg from "./hero.png";
-import HeroBg from "./hero-bg.svg";
-import Separator from "./separator.svg";
+import HeroImg from "./assets/hero.png";
+import HeroBg from "./assets/hero-bg.svg";
+import Separator from "./assets/separator.svg";
 
 export function HeroSection() {
   return (
     <div className="relative">
       <div className="py-20 max-w-[749px] mx-auto text-center">
-        <h2 className="text-[64px] font-semibold leading-[80px]">
+        <h2 className="text-[64px] font-semibold leading-[80px] text-white">
           Beautiful Landing Page Design for You
         </h2>
         <p className="mt-[18px] text-[#9E9E9E] leading-7">

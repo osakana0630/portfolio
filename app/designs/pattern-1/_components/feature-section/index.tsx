@@ -7,7 +7,7 @@ import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 export function FeatureSection() {
   return (
     <div className="mx-auto max-w-[1110px] mt-12">
-      <h2 className="font-semibold text-[48px]">Feature Boxes</h2>
+      <h2 className="font-semibold text-[48px] text-white">Feature Boxes</h2>
       <p className="mt-[5px] text-[18px] leading-[28px] text-[#9E9E9E]">
         A good design is not only aesthetically pleasing, but also
         <br /> functional. It should be able to solve the problem
@@ -28,7 +28,7 @@ export function FeatureSection() {
             >
               <Image src={feature.icon} alt="" width={45} height={44} />
             </div>
-            <h3 className="mt-[39px] text-[20px] font-semibold leading-[32px]">
+            <h3 className="mt-[39px] text-[20px] font-semibold leading-[32px] text-white">
               {feature.title}
             </h3>
             <p className="mt-[15px] text-[#9E9E9E] text-[14px] leading-[28px]">
@@ -47,7 +47,7 @@ export function FeatureSection() {
           height={678}
         />
         <div className="flex flex-col justify-center">
-          <h2 className="text-[48px] font-semibold leading-[64px]">
+          <h2 className="text-[48px] font-semibold leading-[64px] text-white">
             We&apos;re here to guide and help you at all times
           </h2>
           <p className="mt-[12px] text-[#9E9E9E]">

@@ -7,7 +7,7 @@ export function ContactSection() {
       <Image src={sphere} alt="" width={582} height={628} />
 
       <div className="flex flex-col text-left">
-        <h2 className="font-semibold text-[48px]">Get In Touch</h2>
+        <h2 className="font-semibold text-[48px] text-white">Get In Touch</h2>
         <p className="mt-[5px] text-[18px] leading-[28px] text-[#9E9E9E]">
           A good design is not only aesthetically pleasing, but
           <br />

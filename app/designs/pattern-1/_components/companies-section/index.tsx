@@ -13,7 +13,7 @@ export function CompaniesSection() {
   return (
     <div className="relative pt-[110px] pb-[300px] bg-[#18181C]">
       <div className="mx-auto max-w-[1110px] text-center">
-        <h2 className="text-5xl font-semibold leading-[64px]">
+        <h2 className="text-5xl font-semibold leading-[64px] text-white">
           Companies we Worked
           <br />
           With in Since 2015
