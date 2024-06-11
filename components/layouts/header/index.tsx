@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
+import { Rocket } from "lucide-react";
 
 const headerNavs = [
   {
@@ -26,7 +27,9 @@ export function Header() {
     <header className="border-b">
       <div className="h-16 flex items-center container gap-4">
         <h1 className="text-2xl font-bold">
-          <Link href="/">Imai Portfolio</Link>
+          <Link href="/" className="flex items-center gap-3">
+            <Rocket /> Works
+          </Link>
         </h1>
         <span className="flex-1" />
         <nav>
