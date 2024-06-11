@@ -6,7 +6,7 @@ import { CalendarDays } from "lucide-react";
 
 const designs = [
   {
-    title: "Figmaテンプレートを使ってデザインを作成する",
+    title: "Figma無料テンプレートをもとにLPデザインコーディング",
     image: "/pattern1.png",
     href: "/designs/pattern-1",
   },
