@@ -6,7 +6,7 @@ import { FeatureSection } from "@/app/designs/pattern-1/_components/feature-sect
 import { CompaniesSection } from "@/app/designs/pattern-1/_components/companies-section";
 import { ContactSection } from "@/app/designs/pattern-1/_components/contact-section";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, CircleAlert } from "lucide-react";
 
 export default function Page() {
   return (
@@ -33,7 +33,7 @@ export default function Page() {
         </ul>
       </div>
 
-      <div className="border border-muted rounded-lg bg-black">
+      <div className="hidden lg:block  border border-muted rounded-lg bg-black">
         <Header />
         <main>
           <HeroSection />
@@ -42,6 +42,13 @@ export default function Page() {
           <ContactSection />
         </main>
         <Footer />
+      </div>
+
+      <div className="lg:hidden">
+        <p className="text-muted-foreground font-semibold text-sm flex items-center gap-2 border bg-muted p-5 rounded-lg">
+          <CircleAlert size={20} />
+          レスポンシブ対応していません。PCでご覧ください。
+        </p>
       </div>
     </Frame>
   );
