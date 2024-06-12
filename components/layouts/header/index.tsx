@@ -8,7 +8,7 @@ import { ActiveLink } from "@/components/active-link";
 export function Header() {
   return (
     <header className="border-b">
-      <div className="h-16 flex items-center container gap-4">
+      <div className="h-16 flex items-center container gap-8">
         {/* ロゴ */}
         <h1 className="text-2xl font-bold">
           <Link href="/" className="flex items-center gap-3">
