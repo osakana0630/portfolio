@@ -1,7 +1,9 @@
+import { Empty } from "@/components/empty";
+
 export default function Page() {
   return (
     <div>
-      <h1>レシピ一覧</h1>
+      <Empty />
     </div>
   );
 }
