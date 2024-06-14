@@ -19,7 +19,7 @@ export default function Page() {
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
       {designs.map((design) => (
         <Card
-          className="relative hover:bg-accent hover:shadow-lg transition duration-300 transform hover:scale-105"
+          className="relative hover:bg-accent shadow-lg transition duration-300 transform hover:scale-105"
           key={design.title}
         >
           <CardContent className="p-4 space-y-2">
