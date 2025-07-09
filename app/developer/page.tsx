@@ -13,7 +13,7 @@ export default function Page() {
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <h1 className="text-xl font-semibold mb-1">テスト太郎</h1>
+        <h1 className="text-xl font-semibold mb-1">Imai Naoya</h1>
         <p className="text-sm text-muted-foreground mb-6">
           ソフトウェアエンジニア
         </p>
@@ -38,6 +38,21 @@ export default function Page() {
       <Separator />
 
       <div className="space-y-4">
+        <h2 className="text-xl font-semibold">経歴</h2>
+        <ul className="space-y-3">
+          {careers.map((career) => (
+            <li key={career.company}>
+              <h3 className="text-base font-semibold">{career.company}</h3>
+              <p className="text-sm text-muted-foreground">{career.period}</p>
+              <p className="text-sm">{career.position}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <Separator />
+
+      <div className="space-y-4">
         <h2 className="text-xl font-semibold">技術スタック</h2>
         {skills.map((skill) => (
           <div key={skill.label}>
@@ -51,21 +66,6 @@ export default function Page() {
             </ul>
           </div>
         ))}
-      </div>
-
-      <Separator />
-
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">経歴</h2>
-        <ul className="space-y-3">
-          {careers.map((career) => (
-            <li key={career.company}>
-              <h3 className="text-base font-semibold">{career.company}</h3>
-              <p className="text-sm text-muted-foreground">{career.period}</p>
-              <p className="text-sm">{career.position}</p>
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );
