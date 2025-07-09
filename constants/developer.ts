@@ -24,13 +24,13 @@ export const socialLinks = [
 export const careers = [
   {
     company: "株式会社Upa",
-    period: "2020/04 - 2024/03",
+    period: "2020/04 ~ 2024/03",
     position: "フロントエンド・バックエンドエンジニア",
     type: "正社員"
   },
   {
     company: "Tailor株式会社",
-    period: "2024/07 - 2025/06",
+    period: "2024/07 ~ 2025/06",
     position: "フロントエンド・バックエンドエンジニア",
     type: "業務委託"
   },
