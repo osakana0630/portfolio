@@ -11,6 +11,7 @@ const designs = [
     title: "Figma無料テンプレートをもとにLPデザインコーディング",
     image: `${BASE_PATH}/pattern1.png`,
     href: "/designs/pattern-1",
+    date: "2024/06/12",
   },
 ];
 
@@ -36,7 +37,7 @@ export default function Page() {
               </Link>
               <time className="text-muted-foreground text-sm flex items-center">
                 <CalendarDays size={16} className="mr-1" />
-                {format(new Date(), "yyyy/MM/dd")}
+                {format(new Date(design.date), "yyyy/MM/dd")}
               </time>
             </div>
           </CardContent>
