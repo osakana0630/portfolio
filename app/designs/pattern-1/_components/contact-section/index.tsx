@@ -1,6 +1,6 @@
-import sphere from "./assets/sphere.svg";
 import Image from "next/image";
 import { ContactForm } from "@/app/designs/pattern-1/_components/feature-section/contact-form";
+import sphere from "./assets/sphere.svg";
 export function ContactSection() {
   return (
     <div className="pt-[230px] flex items-center  mx-auto max-w-[1110px]">

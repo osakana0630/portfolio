@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/app/designs/pattern-1/_components/header/logo.svg";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 

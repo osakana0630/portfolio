@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { socialLinks, skills, careers } from "@/constants/developer";
+import { Separator } from "@/components/ui/separator";
+import { careers, skills, socialLinks } from "@/constants/developer";
 
 export default function Page() {
   return (
