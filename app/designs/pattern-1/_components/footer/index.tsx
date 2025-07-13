@@ -1,8 +1,8 @@
+import Image from "next/image";
+import discord from "@/app/designs/pattern-1/_components/footer/assets/discord.svg";
+import linkedIn from "@/app/designs/pattern-1/_components/footer/assets/linkedin.svg";
 import logo from "@/app/designs/pattern-1/_components/footer/assets/logo.svg";
 import x from "@/app/designs/pattern-1/_components/footer/assets/x.svg";
-import linkedIn from "@/app/designs/pattern-1/_components/footer/assets/linkedin.svg";
-import discord from "@/app/designs/pattern-1/_components/footer/assets/discord.svg";
-import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 
 export function Footer() {

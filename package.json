@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write .",
-    "lint": "eslint .",
+    "format": "biome format --write .",
+    "lint": "biome lint --write .",
+    "check": "biome check --write .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

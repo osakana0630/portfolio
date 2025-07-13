@@ -1,8 +1,8 @@
-import { features } from "@/app/designs/pattern-1/_components/feature-section/features";
 import Image from "next/image";
+import { features } from "@/app/designs/pattern-1/_components/feature-section/features";
+import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 import { cn } from "@/lib/utils";
 import featureSectionSvg from "./assets/feature-section.svg";
-import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 
 export function FeatureSection() {
   return (

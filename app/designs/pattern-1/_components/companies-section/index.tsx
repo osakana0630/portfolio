@@ -1,14 +1,24 @@
+import Image from "next/image";
+import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 import alisa from "./assets/alisa.svg";
+import freeTrial from "./assets/free-trial.svg";
 import happy from "./assets/happy.svg";
 import natural from "./assets/natural.svg";
 import smile from "./assets/smile.svg";
-import wave from "./assets/wave.svg";
 import urban from "./assets/urban.svg";
-import freeTrial from "./assets/free-trial.svg";
-import Image from "next/image";
-import { Button } from "@/app/designs/pattern-1/_components/ui/button";
+import wave from "./assets/wave.svg";
 
-const companies = [smile, urban, natural, wave, happy, alisa];
+const companies = [
+  { img: smile, name: "smile" },
+  { img: urban, name: "urban" },
+  { img: natural, name: "natural" },
+  { img: wave, name: "wave" },
+  { img: happy, name: "happy" },
+  {
+    img: alisa,
+    name: "alisa",
+  },
+];
 export function CompaniesSection() {
   return (
     <div className="relative pt-[110px] pb-[300px] bg-[#18181C]">
@@ -19,12 +29,12 @@ export function CompaniesSection() {
           With in Since 2015
         </h2>
         <ul className="mt-[70px] flex gap-[30px]">
-          {companies.map((company, index) => (
+          {companies.map((company) => (
             <li
-              key={index}
+              key={company.name}
               className="flex justify-center items-center p-7 bg-black rounded-[10px]"
             >
-              <Image src={company} alt="" width={101} height={37} />
+              <Image src={company.img} alt="" width={101} height={37} />
             </li>
           ))}
         </ul>
