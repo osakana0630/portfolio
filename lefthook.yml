@@ -12,5 +12,5 @@ pre-push:
 pre-commit:
   parallel: true
   jobs:
-    - run: pnpm eslint {staged_files}
-      glob: "*.{js,ts,jsx,tsx}"
+    - run: pnpm lint
+    - run: pnpm format
