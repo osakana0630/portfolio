@@ -17,7 +17,11 @@ export const skills = [
 ];
 
 export const socialLinks = [
-  { label: "GitHub", href: "https://github.com/osakana0630", icon: `${BASE_PATH}/github.svg` },
+  {
+    label: "GitHub",
+    href: "https://github.com/osakana0630",
+    icon: `${BASE_PATH}/github.svg`,
+  },
   { label: "Twitter", href: "#", icon: `${BASE_PATH}/x.svg` },
 ];
 
@@ -26,12 +30,12 @@ export const careers = [
     company: "株式会社Upa",
     period: "2020/04 ~ 2024/03",
     position: "フロントエンド・バックエンドエンジニア",
-    type: "正社員"
+    type: "正社員",
   },
   {
     company: "Tailor株式会社",
     period: "2024/07 ~ 2025/06",
     position: "フロントエンド・バックエンドエンジニア",
-    type: "業務委託"
+    type: "業務委託",
   },
 ];

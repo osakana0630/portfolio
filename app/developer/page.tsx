@@ -43,7 +43,9 @@ export default function Page() {
           {careers.map((career) => (
             <li key={career.company}>
               <h3 className="text-base font-semibold">{career.company}</h3>
-              <p className="text-sm text-muted-foreground">{career.period}（{career.type}）</p>
+              <p className="text-sm text-muted-foreground">
+                {career.period}（{career.type}）
+              </p>
               <p className="text-sm">{career.position}</p>
             </li>
           ))}
