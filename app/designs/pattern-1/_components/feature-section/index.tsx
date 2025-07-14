@@ -22,7 +22,7 @@ export function FeatureSection() {
               className={cn(
                 "w-[104px] h-[104px] flex justify-center items-center bg-[#222228] rounded-[30px]",
                 feature.isEmphasized &&
-                  "bg-linear-to-r from-[#FF9898] to-[#8054FF]"
+                  "bg-linear-to-r from-[#FF9898] to-[#8054FF]",
               )}
             >
               <Image src={feature.icon} alt="" width={45} height={44} />
