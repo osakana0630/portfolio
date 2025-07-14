@@ -7,8 +7,11 @@
     "build": "next build",
     "start": "next start",
     "format": "biome format --write .",
+    "format:check": "biome format .",
     "lint": "biome lint --write .",
-    "check": "biome check --write .",
+    "lint:check": "biome lint .",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
