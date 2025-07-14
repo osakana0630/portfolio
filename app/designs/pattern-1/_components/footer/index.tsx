@@ -1,8 +1,4 @@
 import Image from "next/image";
-import discord from "@/app/designs/pattern-1/_components/footer/assets/discord.svg";
-import linkedIn from "@/app/designs/pattern-1/_components/footer/assets/linkedin.svg";
-import logo from "@/app/designs/pattern-1/_components/footer/assets/logo.svg";
-import x from "@/app/designs/pattern-1/_components/footer/assets/x.svg";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 
 export function Footer() {
@@ -11,7 +7,7 @@ export function Footer() {
       <div className="mx-auto flex items-center py-14 max-w-[1110px]">
         <div>
           <h3 className="mb-5">
-            <Image src={logo} alt="" width={56} height={45} />
+            <Image src={"/pattern1/logo.svg"} alt="" width={56} height={45} />
           </h3>
           <p className="text-[14px] leading-[28px] text-[#9E9E9E]">
             A good design is not only aesthetically
@@ -58,17 +54,35 @@ export function Footer() {
           <ul className="flex gap-2">
             <li>
               <Button variant="ghost" size="icon" className="rounded-full">
-                <Image src={x} unoptimized alt="x" />
+                <Image
+                  src={"/pattern1/x.svg"}
+                  unoptimized
+                  alt="x"
+                  width={18}
+                  height={18}
+                />
               </Button>
             </li>
             <li>
               <Button variant="ghost" size="icon" className="rounded-full">
-                <Image src={linkedIn} unoptimized alt="linkedIn" />
+                <Image
+                  src={"/pattern1/linkedIn.svg"}
+                  unoptimized
+                  alt="linkedIn"
+                  width={18}
+                  height={18}
+                />
               </Button>
             </li>
             <li>
               <Button variant="ghost" size="icon" className="rounded-full">
-                <Image src={discord} unoptimized alt="discord" />
+                <Image
+                  src={"/pattern1/discord.svg"}
+                  unoptimized
+                  alt="discord"
+                  width={18}
+                  height={18}
+                />
               </Button>
             </li>
           </ul>

@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
-import HeroImg from "./assets/hero.png";
-import HeroBg from "./assets/hero-bg.svg";
-import Separator from "./assets/separator.svg";
 
 export function HeroSection() {
   return (
@@ -17,19 +14,29 @@ export function HeroSection() {
           functional. It should be able to solve the problem
         </p>
         <Button className="mt-[25px]">Download Template</Button>
-        <Image src={HeroImg} alt="" className="relative z-10 mt-[70px]" />
+        <Image
+          src={"/pattern1/hero.png"}
+          alt=""
+          className="relative z-10 mt-[70px]"
+          width={18}
+          height={18}
+        />
       </div>
       <Image
-        src={HeroBg}
+        src={"/pattern1/hero-bg.svg"}
         alt=""
         unoptimized
         className="absolute inset-0 mx-auto"
+        width={18}
+        height={18}
       />
       <Image
-        src={Separator}
+        src={"/pattern1/separator.svg"}
         alt=""
         unoptimized
         className="absolute inset-x-0 -bottom-[50px]"
+        width={18}
+        height={18}
       />
     </div>
   );

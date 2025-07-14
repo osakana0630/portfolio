@@ -1,21 +1,14 @@
 import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
-import alisa from "./assets/alisa.svg";
-import freeTrial from "./assets/free-trial.svg";
-import happy from "./assets/happy.svg";
-import natural from "./assets/natural.svg";
-import smile from "./assets/smile.svg";
-import urban from "./assets/urban.svg";
-import wave from "./assets/wave.svg";
 
 const companies = [
-  { img: smile, name: "smile" },
-  { img: urban, name: "urban" },
-  { img: natural, name: "natural" },
-  { img: wave, name: "wave" },
-  { img: happy, name: "happy" },
+  { img: "/pattern1/smile.svg", name: "smile" },
+  { img: "/pattern1/urban.svg", name: "urban" },
+  { img: "/pattern1/natural.svg", name: "natural" },
+  { img: "/pattern1/wave.svg", name: "wave" },
+  { img: "/pattern1/happy.svg", name: "happy" },
   {
-    img: alisa,
+    img: "/pattern1/alisa.svg",
     name: "alisa",
   },
 ];
@@ -41,7 +34,7 @@ export function CompaniesSection() {
       </div>
 
       <Image
-        src={freeTrial}
+        src={"/pattern1/free-trial.svg"}
         alt="love our Tool? fell free to join our 15 days free trial"
         width={1110}
         height={425}

@@ -33,7 +33,7 @@ export default function Page() {
         </ul>
       </div>
 
-      <div className="hidden lg:block  border border-muted rounded-lg bg-black">
+      <div className="hidden lg:block border border-muted rounded-lg bg-black">
         <Header />
         <main>
           <HeroSection />
