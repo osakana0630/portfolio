@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navLinks } from "@/constants/nav-links";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 
 export function MobileNav() {
   return (

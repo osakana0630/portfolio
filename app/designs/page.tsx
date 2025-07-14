@@ -3,7 +3,7 @@ import { CalendarDays } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import nextConfig from "../../next.config.mjs";
+import nextConfig from "../../next.config";
 
 const BASE_PATH = nextConfig.basePath || "";
 

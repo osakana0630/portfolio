@@ -8,7 +8,7 @@ import { careers, skills, socialLinks } from "@/constants/developer";
 export default function Page() {
   return (
     <div className="space-y-6">
-      <div className="flex flex-col justify-center items-center bg-muted/50 backdrop-blur p-12 rounded-lg">
+      <div className="flex flex-col justify-center items-center bg-muted/50 backdrop-blur-sm p-12 rounded-lg">
         <Avatar className="size-40 md:size-48 mb-6">
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>

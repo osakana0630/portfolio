@@ -1,9 +1,9 @@
-import Link from "next/link";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Rocket } from "lucide-react";
-import { MobileNav } from "./mobile-nav";
-import { navLinks } from "@/constants/nav-links";
+import Link from "next/link";
 import { ActiveLink } from "@/components/active-link";
+import { ModeToggle } from "@/components/mode-toggle";
+import { navLinks } from "@/constants/nav-links";
+import { MobileNav } from "./mobile-nav";
 
 export function Header() {
   return (

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { features } from "@/app/designs/pattern-1/_components/feature-section/features";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 import { cn } from "@/lib/utils";
-import featureSectionSvg from "./assets/feature-section.svg";
 
 export function FeatureSection() {
   return (
@@ -23,7 +22,7 @@ export function FeatureSection() {
               className={cn(
                 "w-[104px] h-[104px] flex justify-center items-center bg-[#222228] rounded-[30px]",
                 feature.isEmphasized &&
-                  "bg-gradient-to-r from-[#FF9898] to-[#8054FF]",
+                  "bg-linear-to-r from-[#FF9898] to-[#8054FF]",
               )}
             >
               <Image src={feature.icon} alt="" width={45} height={44} />
@@ -40,7 +39,7 @@ export function FeatureSection() {
 
       <div className="flex mt-[31px] gap-[24px]">
         <Image
-          src={featureSectionSvg}
+          src={"/pattern1/feature-section.svg"}
           unoptimized
           alt=""
           width={678}
