@@ -10,7 +10,7 @@ const BASE_PATH = nextConfig.basePath || "";
 const designs = [
   {
     title: "Figma無料テンプレートをもとにLPデザインコーディング",
-    image: `${BASE_PATH}/pattern1.png`,
+    image: `${BASE_PATH}/pattern1/thumbnail.png`,
     href: "/designs/pattern-1",
     date: "2024/06/12",
   },
