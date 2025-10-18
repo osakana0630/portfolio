@@ -1,16 +1,17 @@
 "use client";
 
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
+  SheetHeader,
   SheetContent,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { VisuallyHidden } from "@/components/ui/visually-hidden";
+import Link from "next/link";
+import { Menu } from "lucide-react";
 import { navLinks } from "@/constants/nav-links";
+import { VisuallyHidden } from "@/components/ui/visually-hidden";
+import { Button } from "@/components/ui/button";
 
 export function MobileNav() {
   return (
@@ -21,9 +22,11 @@ export function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-4/5">
-        <VisuallyHidden>
-          <SheetTitle>ナビゲーションメニュー</SheetTitle>
-        </VisuallyHidden>
+        <SheetHeader>
+          <VisuallyHidden>
+            <SheetTitle>ナビゲーションメニュー</SheetTitle>
+          </VisuallyHidden>
+        </SheetHeader>
         <ul className="flex flex-col gap-1">
           {navLinks.map((item) => (
             <li key={item.label}>
