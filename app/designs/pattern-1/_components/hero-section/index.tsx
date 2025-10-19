@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
+import nextConfig from "../../../../../next.config";
+
+const BASE_PATH = nextConfig.basePath || "";
 
 export function HeroSection() {
   return (
@@ -15,7 +18,7 @@ export function HeroSection() {
         </p>
         <Button className="mt-[25px]">Download Template</Button>
         <Image
-          src={"/pattern1/hero.png"}
+          src={`${BASE_PATH}/pattern1/hero.png`}
           alt=""
           className="relative z-10 mt-[70px]"
           width={18}
@@ -23,7 +26,7 @@ export function HeroSection() {
         />
       </div>
       <Image
-        src={"/pattern1/hero-bg.svg"}
+        src={`${BASE_PATH}/pattern1/hero-bg.svg`}
         alt=""
         unoptimized
         className="absolute inset-0 mx-auto"
@@ -31,7 +34,7 @@ export function HeroSection() {
         height={18}
       />
       <Image
-        src={"/pattern1/separator.svg"}
+        src={`${BASE_PATH}/pattern1/separator.svg`}
         alt=""
         unoptimized
         className="absolute inset-x-0 -bottom-[50px]"

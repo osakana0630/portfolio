@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
+import nextConfig from "../../../../../next.config";
+
+const BASE_PATH = nextConfig.basePath || "";
 
 export function Footer() {
   return (
@@ -7,7 +10,12 @@ export function Footer() {
       <div className="mx-auto flex items-center py-14 max-w-[1110px]">
         <div>
           <h3 className="mb-5">
-            <Image src={"/pattern1/logo.svg"} alt="" width={56} height={45} />
+            <Image
+              src={`${BASE_PATH}/pattern1/logo.svg`}
+              alt=""
+              width={56}
+              height={45}
+            />
           </h3>
           <p className="text-[14px] leading-[28px] text-[#9E9E9E]">
             A good design is not only aesthetically
@@ -55,7 +63,7 @@ export function Footer() {
             <li>
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Image
-                  src={"/pattern1/x.svg"}
+                  src={`${BASE_PATH}/pattern1/x.svg`}
                   unoptimized
                   alt="x"
                   width={18}
@@ -66,7 +74,7 @@ export function Footer() {
             <li>
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Image
-                  src={"/pattern1/linkedIn.svg"}
+                  src={`${BASE_PATH}/pattern1/linkedIn.svg`}
                   unoptimized
                   alt="linkedIn"
                   width={18}
@@ -77,7 +85,7 @@ export function Footer() {
             <li>
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Image
-                  src={"/pattern1/discord.svg"}
+                  src={`${BASE_PATH}/pattern1/discord.svg`}
                   unoptimized
                   alt="discord"
                   width={18}

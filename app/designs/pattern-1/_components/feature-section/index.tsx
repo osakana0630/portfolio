@@ -2,6 +2,9 @@ import Image from "next/image";
 import { features } from "@/app/designs/pattern-1/_components/feature-section/features";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
 import { cn } from "@/lib/utils";
+import nextConfig from "../../../../../next.config";
+
+const BASE_PATH = nextConfig.basePath || "";
 
 export function FeatureSection() {
   return (
@@ -39,7 +42,7 @@ export function FeatureSection() {
 
       <div className="flex mt-[31px] gap-[24px]">
         <Image
-          src={"/pattern1/feature-section.svg"}
+          src={`${BASE_PATH}/pattern1/feature-section.svg`}
           unoptimized
           alt=""
           width={678}

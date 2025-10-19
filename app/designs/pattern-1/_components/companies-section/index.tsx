@@ -1,14 +1,17 @@
 import Image from "next/image";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
+import nextConfig from "../../../../../next.config";
+
+const BASE_PATH = nextConfig.basePath || "";
 
 const companies = [
-  { img: "/pattern1/smile.svg", name: "smile" },
-  { img: "/pattern1/urban.svg", name: "urban" },
-  { img: "/pattern1/natural.svg", name: "natural" },
-  { img: "/pattern1/wave.svg", name: "wave" },
-  { img: "/pattern1/happy.svg", name: "happy" },
+  { img: `${BASE_PATH}/pattern1/smile.svg`, name: "smile" },
+  { img: `${BASE_PATH}/pattern1/urban.svg`, name: "urban" },
+  { img: `${BASE_PATH}/pattern1/natural.svg`, name: "natural" },
+  { img: `${BASE_PATH}/pattern1/wave.svg`, name: "wave" },
+  { img: `${BASE_PATH}/pattern1/happy.svg`, name: "happy" },
   {
-    img: "/pattern1/alisa.svg",
+    img: `${BASE_PATH}/pattern1/alisa.svg`,
     name: "alisa",
   },
 ];
@@ -34,7 +37,7 @@ export function CompaniesSection() {
       </div>
 
       <Image
-        src={"/pattern1/free-trial.svg"}
+        src={`${BASE_PATH}/pattern1/free-trial.svg`}
         alt="love our Tool? fell free to join our 15 days free trial"
         width={1110}
         height={425}

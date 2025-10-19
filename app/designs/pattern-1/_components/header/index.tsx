@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/app/designs/pattern-1/_components/ui/button";
+import nextConfig from "../../../../../next.config";
+
+const BASE_PATH = nextConfig.basePath || "";
 
 export function Header() {
   return (
@@ -8,7 +11,7 @@ export function Header() {
       <h1 className="text-2xl font-bold">
         <Link href="/designs/pattern-1">
           <Image
-            src={"/pattern1/header-logo.svg"}
+            src={`${BASE_PATH}/pattern1/header-logo.svg`}
             alt=""
             width={131}
             height={33}
