@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -8,11 +8,13 @@
   "files": {
     "ignoreUnknown": false,
     "includes": [
-      "app/**/*",
-      "components/**/*",
-      "constants/**/*",
-      "hooks/**/*",
-      "lib/**/*"
+      "app/**/*.ts",
+      "app/**/*.tsx",
+      "components/**/*.ts",
+      "components/**/*.tsx",
+      "constants/**/*.ts",
+      "hooks/**/*.ts",
+      "lib/**/*.ts"
     ]
   },
   "formatter": {
